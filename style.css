@@ -16,6 +16,8 @@ body {
 .top {
   height: 1024px;
   background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .top__heading {
   padding-top: 217px;
@@ -32,6 +34,15 @@ body {
   padding-bottom: 44px;
   font-style: normal;
   font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.top__textbold {
+  width: 481px;
+  padding-bottom: 44px;
+  font-style: normal;
+  font-weight: 700;
   font-size: 18px;
   line-height: 32px;
   color: #FFFFFF;
@@ -57,6 +68,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 32px;
 }
 
 .game__item {
@@ -81,4 +93,9 @@ body {
 
 .game__item_3 {
   background-image: url(img/game3.png);
+}
+
+.game__item_text {
+  padding-left: 32px;
+  padding-bottom: 32px;
 }/*# sourceMappingURL=style.css.map */
