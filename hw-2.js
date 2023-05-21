@@ -1,5 +1,5 @@
 
-/*let a = 10;
+let a = 10;
 alert (a);
 a = 20;
 alert (a);
@@ -34,7 +34,7 @@ num = num / 3;
 alert(num);
 
 let age = Number(prompt("Сколько тебе лет?"));
-alert(age);*/
+alert(age);
 
 const user = {
     userName: "IhateJS",
