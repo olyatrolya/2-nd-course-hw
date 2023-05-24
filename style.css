@@ -181,6 +181,10 @@ body {
   .btn__wrapper {
     text-align: center;
   }
+  .game {
+    flex-direction: column;
+    align-items: center;
+  }
   .game__item {
     width: 343px;
   }
