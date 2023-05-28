@@ -1,0 +1,45 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top {
+        height: 735px;
+        &__heading {
+            width: auto;
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+            padding-top: 238px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+            text-align: center;
+            padding-bottom: 32px
+        }
+    }
+    .btn__wrapper {
+        text-align: center;
+    }
+    .game {
+        flex-direction: column;
+        align-items: center;
+    }
+    .game__item {
+        width: 343px;
+    }
+    .game__item_1 {
+        background-image: url(img/game1mobile.png);
+    }
+    .game__item_2 {
+        background-image: url(img/game2mobile.png);
+    }
+    .game__item_3 {
+        background-image: url(img/game3mobile.png);
+    }
+    .seasons__box {
+        padding-top: 51px;
+    }
+}
