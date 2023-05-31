@@ -1,4 +1,3 @@
-/*
 //Задание №1
 
 function minNumber(a,b) {
@@ -110,11 +109,10 @@ function chekNumber(z,v) {
   console.log(circle1.getPerimeter());
   console.log(circle2.getArea());
   console.log(circle2.getPerimeter());
-   */
+ 
+
   //Задание №8
 
-
- 
   function saySeason () {
     let userAnswer = Number(prompt('Введи номер месяца'));
     if (userAnswer === 12 || userAnswer === 1 || userAnswer === 2) 
