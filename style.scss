@@ -15,6 +15,10 @@ body {
     background-image: url(img/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
     &__heading {
         padding-top: 217px;
         padding-bottom: 32px;

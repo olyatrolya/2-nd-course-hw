@@ -11,11 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 <body>
     <section class="top center">
+        <div class="top__content">
             <h1 class="top__heading">Добро пожаловать на мой сайт!</h1>
             <p class="top__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="top__textbold">поехали</span> и <span class="top__textbold">приступай</span></p>
             <div class="btn__wrapper">
                 <button class="btn">Поехали!</button>
             </div>
+        </div>
     </section>
     <section class="game center">
         <div class="game__item game__item_1">
@@ -28,18 +30,16 @@
             <p class="game__item game__item_text">Игра 3</p>
          </div>
     </section>
-    <!--
         <section class="seasons center">
         <div class="seasons__box">
             <div class="seasons__text_box">
                 <h2 class="seasons__heading">Времена года!</h2>
                 <p class="seasons__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-                <button class="btn">Играть!</button>
+                <button class="btn" onclick="saySeason();">Играть!</button>
             </div>
             <img class="seasons__img" src="img/seasons.png" alt="image">
         </div>
     </section>
-    -->
     <script src="hw-5.js"></script>    
 </body>
 </html>

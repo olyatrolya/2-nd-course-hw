@@ -5,6 +5,9 @@
     }
     .top {
         height: 735px;
+        &__content {
+            text-align: center;
+        }
         &__heading {
             width: auto;
             font-size: 32px;
