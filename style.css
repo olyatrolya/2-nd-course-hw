@@ -19,6 +19,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+.top__content {
+  display: flex;
+  flex-direction: column;
+}
 .top__heading {
   padding-top: 217px;
   padding-bottom: 32px;
@@ -163,6 +167,9 @@ body {
   }
   .top {
     height: 735px;
+  }
+  .top__content {
+    text-align: center;
   }
   .top__heading {
     width: auto;
