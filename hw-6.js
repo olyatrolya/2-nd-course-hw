@@ -18,6 +18,19 @@ let nums = [1, 3, 5, 10, 20];
 nums = nums.join(' ');
 console.log(nums);
 
+// Задание №4 Долго не могла понять как вставить везде 1
+
+let thisArr = [];
+for (let i = 0; i < 3; i++) {
+    thisArr[i] = []; // тут создала оличество подмасивов
+
+    for (let j = 0; j < 3 ; j++) // тут определила, что в подмассиве будет по три циферки
+    {
+        thisArr[i][j] = 1;
+    }
+}
+console.log(thisArr);
+
 //Задание №5
 
 let rownums = [1, 1, 1];
@@ -30,6 +43,13 @@ let numsletter = [9, 8, 7, 'a', 6, 5];
 let numsonly = numsletter.filter(el => el == Number(el));
 numsonly.sort()
 console.log(numsonly);
+
+//Задание №7 ??? забыла как заставить ввести менно число - поставила + перед userAnswer
+
+let theseNumbers = [9, 8, 7, 6, 5];
+let userAnswer = prompt('Введите число');
+let search = theseNumbers.includes(+userAnswer);
+console.log(search);
 
 //Задание №8
 
