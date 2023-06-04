@@ -18,13 +18,13 @@ let nums = [1, 3, 5, 10, 20];
 nums = nums.join(' ');
 console.log(nums);
 
-// Задание №4 Долго не могла понять как вставить везде 1
+// Задание №4 
 
 let thisArr = [];
 for (let i = 0; i < 3; i++) {
-    thisArr[i] = []; // тут создала оличество подмасивов
+    thisArr[i] = [];
 
-    for (let j = 0; j < 3 ; j++) // тут определила, что в подмассиве будет по три циферки
+    for (let j = 0; j < 3 ; j++)
     {
         thisArr[i][j] = 1;
     }
@@ -44,11 +44,11 @@ let numsonly = numsletter.filter(el => el == Number(el));
 numsonly.sort()
 console.log(numsonly);
 
-//Задание №7 ??? забыла как заставить ввести менно число - поставила + перед userAnswer
+//Задание №7
 
 let theseNumbers = [9, 8, 7, 6, 5];
-let userAnswer = prompt('Введите число');
-let search = theseNumbers.includes(+userAnswer);
+let userAnswer = +prompt('Введите число'); //+prompt
+let search = theseNumbers.includes(userAnswer);
 console.log(search);
 
 //Задание №8
@@ -68,5 +68,37 @@ let arr = [
 let newArray = arr.flat();
 console.log(newArray);
 
-//Задание №10
+// Задание №10
 
+let ar = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (let i = 0; i < ar.length - 1; i++){
+    console.log(ar[i] + ar[i+1]);
+}
+
+
+//Задание №11 надо самим числа придумать и подставить?
+
+const numbers11 = [56, 87, 7];
+
+function doubleNumbers11(numbers11) {
+    return numbers11.map(x => x ** 2);
+}
+console.log(doubleNumbers11(numbers11));
+
+//Задание №12
+
+const thatArr = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+function myMap(thatArr) {
+    return thatArr.map((str) => str.length);
+}
+console.log(myMap(thatArr));
+
+//Задание №13
+
+  function filterPositive(array) {
+  const newArray2 = array.filter (el => el < 0);   // return array.filter((el) => el < 0);
+  return newArray2;
+  }
+  (filterPositive([-1, 0, 5, -10, 56])); // => [-1, -9]
+  (filterPositive([-25, 25, 0, -1000, -2]))
+ 
