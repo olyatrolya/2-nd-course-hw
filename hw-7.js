@@ -1,4 +1,4 @@
-/*
+
 // Задание №1
 let str = 'js';
 console.log(str.toUpperCase());
@@ -35,12 +35,12 @@ console.log(o);
 // Задание №6 // почему-то количество чисел в массиве округляется в большую сторону
 function getRandomArrNumbers(m) {
     let ArrNumbers = [];
-    for(i = 0; i < m / 2; i++) {
+    for(i = 0; i < Math.floor(m / 2); i++) {
         ArrNumbers.push(Math.floor(Math.random() * m));
     }
     return ArrNumbers;
   }
-    console.log(getRandomArrNumbers(5));
+    console.log(getRandomArrNumbers(7));
 
 // Задание №7
 
@@ -88,7 +88,7 @@ let time = "Время: " + hour + ":" + minute + ":" + second;
 
 console.log(fullDate); 
 console.log(time);
-*/
+
 
 function saySeason () {
   let userAnswer = Number(prompt('Введи номер месяца'));
@@ -107,19 +107,21 @@ function saySeason () {
 
 function guessWord () {
   let arrWords = (['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин']);
-  arrWords = alert(arrWords.sort(() => Math.random() - 0.5));
-  for (let i = 0; i < arrWords.length; i++) {
+  arrWords = arrWords.sort(() => Math.random() - 0.5);
+  alert(arrWords);
   let userAnswerFirst = (prompt('Чему равнялся первый элемент массива?'));
-  let userAnswerSecond = (prompt('Чему равнялся последний элемент массива?'))
-  if (userAnswerFirst === arrWords[0] && userAnswerSecond === arrWords[6]) // а тут он не понимает, что я обращаюсь к первому и последнему элементу массива
-      return alert('угадал');
-   else if (userAnswerFirst === arrWords[0] || userAnswerSecond === arrWords[6]) 
-      return alert('Вы были близки к победе!');
+  let userAnswerSecond = (prompt('Чему равнялся последний элемент массива?'));
+  if (
+    userAnswerFirst == arrWords[0] && 
+    userAnswerSecond == arrWords[arrWords.length - 1]
+    )
+      alert('угадал');
+   else if (
+    userAnswerFirst == arrWords[0] || 
+    userAnswerSecond == arrWords[arrWords.length - 1]
+    ) 
+      alert('Вы были близки к победе!');
   else {
-    return alert('Вы ответили неверно');
+    alert('Вы ответили неверно');
   }
 }
-}
-
-let arrWords = (['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин']);
-console.log(arrWords[6]); // тут он мне говорит что это мандарин
