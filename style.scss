@@ -104,19 +104,18 @@ body {
 }
 .seasons__box {
     padding-top: 282px;
-    padding-bottom: 282px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
-.seasons__text_box {
+.seasonsWords__text_box {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
-.seasons__heading {
+.seasonsWords__heading {
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -125,7 +124,7 @@ body {
     align-items: center;
     color: #FFFFFF;
 }
-.seasons__text {
+.seasonsWords__text {
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -136,11 +135,13 @@ body {
     width: 584px;
     height: 64px;  
 }
-.seasons__img {
-    width: 485px;
-    height: 333px;
-    left: 839px;
-    top: 1813.5px;
-    }
-
+.Words__box {
+    padding-top: 472px;
+    padding-bottom: 239px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 @import 'mobile';
