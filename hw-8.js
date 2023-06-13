@@ -1,20 +1,40 @@
 // Задание №1
-const people = [
+const persons = [
     { name: 'Глеб', age: 29 },
     { name: 'Анна', age: 17 },
     { name: 'Олег', age: 7 },
     { name: 'Оксана', age: 47 }
  ];
-console.log(people.sort((prev, next) => prev.age - next.age));
+console.log(persons.sort((prev, next) => prev.age - next.age));
 
 // Задание №2
 
 
-function isPositive(arr) {
-    return arr.filter(number => typeof number == 'number' && number >= 0);
-  }
-  console.log(isPositive([3, -4, 1, 9]));
+  function isPositive(arr) {
+    return arr.filter((el) => el > 0);
+    }
 
+    function filter(arr,callback) {
+    return callback(arr);
+    }
+    
+    console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+    
+    function isMale(arr) {
+        return arr.filter((el) => el.gender === 'male');
+        }
+    
+    function filter(arr,callback) {
+            return callback(arr);
+            }
+    const people = [
+       {name: 'Глеб', gender: 'male'},
+       {name: 'Анна', gender: 'female'},
+       {name: 'Олег', gender: 'male'},
+       {name: 'Оксана', gender: 'female'}
+    ];
+    
+    console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
 
 
 // Задание №3
@@ -34,7 +54,6 @@ function delayForSecond() {
     }, 1000);
 
     
-
 // Задание №5
 
 
@@ -50,7 +69,5 @@ function sayHi(name) {
 }
 
 delayForSecond(() => sayHi('Глеб'));
-
-
 
 
